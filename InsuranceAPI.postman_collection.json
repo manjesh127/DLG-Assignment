@@ -1,0 +1,136 @@
+{
+    "info": {
+        "_postman_id": "d7b26a6b-bec6-4de3-8fba-523adbae4bd6",
+        "name": "DLG",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "post",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:3000/policies",
+                    "path": [
+                        "policies"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "test"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"productId\": \"prod_motor\",\n    \"customerName\": \"manjesh\",\n    \"startDate\": \"2025-01-01\",\n    \"endDate\": \"2026-01-01\",\n    \"premium\": 320,\n    \"status\": \"active\"\n}"
+                }
+            }
+        },
+        {
+            "name": "PUT",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:3000/policies/8803af31-2775-442e-b2fb-6390efd1a1cb",
+                    "path": [
+                        "policies",
+                        "8803af31-2775-442e-b2fb-6390efd1a1cb"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "test"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"productId\": \"prod_motor\",\n    \"customerName\": \"manjesh\",\n    \"startDate\": \"2025-01-01\",\n    \"endDate\": \"2026-01-01\",\n    \"premium\": 30,\n    \"status\": \"active\"\n}"
+                }
+            }
+        },
+        {
+            "name": "DELETE",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:3000/policies/8803af31-2775-442e-b2fb-6390efd1a1cb",
+                    "path": [
+                        "policies",
+                        "8803af31-2775-442e-b2fb-6390efd1a1cb"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "x-api-key",
+                        "value": "test"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GETID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:3000/policies/8803af31-2775-442e-b2fb-6390efd1a1cb",
+                    "path": [
+                        "policies",
+                        "8803af31-2775-442e-b2fb-6390efd1a1cb"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "GETNAME",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:3000/policies?customerName=manjesh",
+                    "query": [
+                        {
+                            "key": "customerName",
+                            "value": "manjesh"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "policies"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ]
+}
