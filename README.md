@@ -45,8 +45,8 @@ A simple Express.js + TypeScript backend project that simulates a policy and pro
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd insurance-api-server
+git clone https://github.com/manjesh127/DLG-Assignment.git
+cd DLG-Assignment
 ```
 
 2. **Install dependencies**
